@@ -12,7 +12,7 @@ p, h1, h2 {
 }
 
 .subtitle {
-    float: right;
+    padding-left: 4em;
     margin-top: -2em;
 }
 
