@@ -4,9 +4,10 @@ html, body {
 }
 
 h1 {
+    font-size: 8em;
     font-family: 'IM Fell DW Pica', serif;
     font-style: italic;
-    text-shadow: 2px 2px 0 #ddd;
+    text-shadow: 1px 1px 0 #eee;
 }
 
 p {
