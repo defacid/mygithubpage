@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'IM Fell DW Pica', serif;
+    text-shadow: 2px 2px 0 #ddd;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+}
