@@ -11,6 +11,15 @@ p, h1, h2 {
     text-shadow: 2px 2px 2px #ddd;
 }
 
+.subtitle {
+    float: right;
+    margin-top: -2em;
+}
+
+#header {
+    margin-bottom: 2em;
+}
+
 h1 {
     font-size: 8em;
     font-family: 'IM Fell DW Pica', serif;
