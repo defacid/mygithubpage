@@ -5,6 +5,7 @@ html, body {
 
 h1 {
     font-family: 'IM Fell DW Pica', serif;
+    text-style: italic;
     text-shadow: 2px 2px 0 #ddd;
 }
 
