@@ -82,4 +82,5 @@ label:before {
     bottom: 1px;
     background-color: #aaa;
     border-radius: 0.5em;
+    box-shadow: inset 2px 0 4px #888;
 }
