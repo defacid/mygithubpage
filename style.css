@@ -27,10 +27,10 @@ a:hover {
 .title {
 	font-size: 8em;
 	font-color: #444;
-	text-shadow: -2px 0 0 #000,
-				 2px 0 0 #000,
-				 0 -2px 0 #000,
-				 0 2px 0 #000;
+	text-shadow: -2px 0px 0 #000,
+				 2px 0px 0 #000,
+				 0px -2px 0 #000,
+				 0px 2px 0 #000;
 }
 
 .subtitle {
