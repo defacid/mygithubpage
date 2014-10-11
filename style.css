@@ -60,8 +60,25 @@ input[type="submit"] {
 }
 
 input[type="radio"] {
-    padding: 1em;
-    border-radius: 1em;
-    background-color: #fff;
-    border: 2px solid #888;
+    display: none;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 1em;
+    margin: 1em 0.5em;
+}
+
+label:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #aaa;
 }
