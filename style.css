@@ -39,9 +39,8 @@ h1 {
 
 #namegen {
     margin: 2em 0;
+    padding: 2em;
     background-color: #ddd;
-    border-radius: 1em;
-    border: 2px solid #888;
 }
 
 input[type="text"] {
