@@ -37,7 +37,13 @@ h1 {
     font-style: italic;
 }
 
+#namegen {
+    margin: 2em 0;
+    background-color: #ddd;
+    border-radius: 1em;
+    border: 2px solid #888;
+}
+
 input[type="text"] {
     font-size: 2em;
-}
 }
