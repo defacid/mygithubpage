@@ -10,6 +10,12 @@ p, h1, h2 {
     padding: 0;
 }
 
+h1 {
+    font-size: 8em;
+    font-family: 'IM Fell DW Pica', serif;
+    font-style: italic;
+} 
+
 a, a:visited {
     color: #888;
     text-decoration: none;
@@ -21,6 +27,7 @@ a:hover {
 }
 
 .subtitle {
+	font-family: 'IM Fell DW Pica', serif;
     padding-left: 16em;
     margin-top: -2em;
     font-style: italic;
@@ -29,12 +36,6 @@ a:hover {
 
 #header {
     margin-bottom: 2em;
-}
-
-h1 {
-    font-size: 8em;
-    font-family: 'IM Fell DW Pica', serif;
-    font-style: italic;
 }
 
 #namegen {
