@@ -46,3 +46,10 @@ h1 {
 input[type="text"] {
     font-size: 2em;
 }
+
+input[type="button"] {
+    color: #fff;
+    background-color: #888;
+    border-radius: 1em;
+    border: 0 none;
+}
