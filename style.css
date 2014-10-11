@@ -11,7 +11,7 @@ p, h1, h2 {
 }
 
 h1 {
-    font-size: 8em;
+    font-size: 6em;
 } 
 
 a, a:visited {
@@ -25,7 +25,7 @@ a:hover {
 }
 
 .title {
-
+	font-size: 8em;
 }
 
 .subtitle {
