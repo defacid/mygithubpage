@@ -47,7 +47,7 @@ input[type="text"] {
     font-size: 2em;
 }
 
-input[type="button"] {
+input[type="submit"] {
     padding: 0.5em 2em;
     color: #fff;
     background-color: #888;
