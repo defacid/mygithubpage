@@ -36,3 +36,8 @@ h1 {
     font-family: 'IM Fell DW Pica', serif;
     font-style: italic;
 }
+
+input[type="text"] {
+    font-size: 2em;
+}
+}
