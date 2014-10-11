@@ -87,7 +87,7 @@ label:before {
 }		
 		
 input[type="radio"]:checked + label:before {  		
-    content: "&bull";  		
+    content: "\2022";  		
     color: #888;  		
     text-align: center;  		
 } 
