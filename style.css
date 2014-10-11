@@ -84,7 +84,7 @@ input[type="radio"] + label {
     padding: 0.25em 0.5em;		
     margin: 0.25em;
     border-radius: 1em;
-    border: 2px solid #444;
+    border: 2px solid #333;
     background-color: #555;
     color: #aaa;
 }
