@@ -65,28 +65,23 @@ input[type="radio"] {
 
 label {
     display: inline-block;
-    cursor: pointer;
-    position: relative;
     padding-left: 1.5em;
     margin: 1em 0.5em;
 }
 
-label:before {
+label span {
     content: "";
     display: inline-block;
     width: 1em;
     height: 1em;
-    margin-right: 0.75em;
-    position: absolute;
-    left: 0;
-    bottom: 1px;
+    margin-right: 0.5em;
     background-color: #fff;
     border: 2px solid #888;
     border-radius: 1em;
     box-shadow: inset 0 2px 4px #ccc;
 }
 
-input[type="radio"]:checked + label {  
+input[type="radio"]:checked + label span {  
     content: "\2022";  
     color: #888;  
     font-size: 1em;  
