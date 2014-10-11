@@ -76,9 +76,10 @@ label:before {
     display: inline-block;
     width: 1em;
     height: 1em;
-    margin-right: 0.5em;
+    margin-right: 0.75em;
     position: absolute;
     left: 0;
     bottom: 1px;
     background-color: #aaa;
+    border-radius: 0.5em;
 }
