@@ -65,7 +65,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
 	background-color: #ccc;
-	border: 2px solid #666;
+	border: 2px solid #aaa;
 }
 
 input[type="radio"] {		
