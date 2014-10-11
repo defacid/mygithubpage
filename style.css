@@ -52,6 +52,7 @@ input[type="text"] {
 
 input[type="submit"] {
     padding: 0.5em 2em;
+    font-size: 2em;
     color: #fff;
     background-color: #888;
     border-radius: 4px;
