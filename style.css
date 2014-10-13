@@ -29,7 +29,8 @@ a:hover {
 }
 
 #wrap {
-	width: 75%;
+	width: 50%;
+	min-width: 600px;
 	margin: auto;
 }
 
