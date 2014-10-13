@@ -126,7 +126,7 @@ input[type="radio"]:checked + label {
 
 .item {
 	margin: 1em 0;
-	padding: 1em;
+	padding: 1em 2em;
 	background-color: #ddd;
 	border-radius: 0.5em;
 }
