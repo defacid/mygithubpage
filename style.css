@@ -51,12 +51,12 @@ a:hover {
     color: #444;
 }
 
-nav {
+#nav {
 	margin: 0;
 	padding: 0;
 }
 
-nav li {
+#nav li {
 	display: inline-block;
 	margin: 0;
 	padding: 0.25em 1em;
