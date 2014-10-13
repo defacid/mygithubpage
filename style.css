@@ -127,4 +127,11 @@ input[type="radio"]:checked + label {
 .item {
 	padding: 1em;
 }
+
+.item h6 {
+	letter-spacing: 1em;
+}
+
+.item h1 {
+	letter-spacing: -2px;
 }
