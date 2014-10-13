@@ -133,5 +133,5 @@ input[type="radio"]:checked + label {
 }
 
 .item h1 {
-	letter-spacing: -2px;
+	letter-spacing: -4px;
 }
