@@ -125,9 +125,10 @@ input[type="radio"]:checked + label {
 }
 
 .item {
-	margin: 1em;
+	margin: 1em 0;
 	padding: 1em;
 	background-color: #ddd;
+	border-radius: 0.5em;
 }
 
 .item h6 {
@@ -139,7 +140,8 @@ input[type="radio"]:checked + label {
 }
 
 #footer {
-	margin: 1em;
+	margin: 1em 0;
 	padding: 1em;
 	background-color: #ddd;
+	border-radius: 0.5em;
 }
