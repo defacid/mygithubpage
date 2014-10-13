@@ -28,6 +28,11 @@ a:hover {
     color: #aaa;
 }
 
+#wrap {
+	width: 75%;
+	margin: auto;
+}
+
 .title {
 	font-size: 8em;
 }
