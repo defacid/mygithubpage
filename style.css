@@ -142,6 +142,6 @@ input[type="radio"]:checked + label {
 #footer {
 	margin: 1em 0;
 	padding: 1em;
-	background-color: #ddd;
+	background-color: #eee;
 	border-radius: 0.5em;
 }
