@@ -51,6 +51,21 @@ a:hover {
     color: #444;
 }
 
+nav {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0;
+	padding: 0.25em 1em;
+	color: #fff;
+	background-color: #ddd;
+	top-left-border-radius: 0.5em;
+	top-right-border-radius: 0.5em;
+}
+
 #namegen {
     margin: 0;
     padding: 2em;
