@@ -73,6 +73,7 @@ a:hover {
 	margin: 0;
 	padding: 0.25em 1em;
 	color: #555;
+	font-weight: bold;
 	top-left-border-radius: 0.5em;
 	top-right-border-radius: 0.5em;
 	-webkit-border-top-left-radius: 0.5em;
