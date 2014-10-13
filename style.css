@@ -139,6 +139,18 @@ input[type="radio"]:checked + label {
 	letter-spacing: -4px;
 }
 
+.red {
+	background-color: #fcc;
+}
+
+.green {
+	background-color: #cfc;
+}
+
+.blue {
+	background-color: #ccf;
+}
+
 #footer {
 	margin: 1em 0;
 	padding: 1em;
