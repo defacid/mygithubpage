@@ -51,6 +51,18 @@ a:hover {
     color: #444;
 }
 
+.red {
+	background-color: #fcc;
+}
+
+.green {
+	background-color: #cfc;
+}
+
+.blue {
+	background-color: #ccf;
+}
+
 #nav {
 	margin: 0;
 	padding: 0;
@@ -137,18 +149,6 @@ input[type="radio"]:checked + label {
 
 .item h1 {
 	letter-spacing: -4px;
-}
-
-.red {
-	background-color: #fcc;
-}
-
-.green {
-	background-color: #cfc;
-}
-
-.blue {
-	background-color: #ccf;
 }
 
 #footer {
