@@ -51,16 +51,12 @@ a:hover {
     color: #444;
 }
 
-.red {
-	background-color: #fde;
+.page {
+	background-color: #ddd;
 }
 
-.green {
-	background-color: #dfe;
-}
-
-.blue {
-	background-color: #def;
+.tab {
+	background-color: #aaa;
 }
 
 #nav {
