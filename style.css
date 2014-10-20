@@ -83,7 +83,7 @@ a:hover {
     border-radius: 0.5em;
 }
 
-input[type="text"] {
+input[type="text"], select {
     padding: 0.25em;
     font-size: 2em;
     border-radius: 4px;
@@ -91,7 +91,7 @@ input[type="text"] {
     text-align: center;
 }
 
-input[type="submit"], select {
+input[type="submit"] {
 	margin-top: 1em;
     padding: 0.25em 2em;
     font-size: 1.5em;
