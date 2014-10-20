@@ -35,12 +35,11 @@ a:hover {
 }
 
 .title {
-	letter-spacing: -0.1em;
 	font-size: 8em;
 }
 
 .subtitle {
-    padding-left: 14em;
+    padding-left: 16em;
     margin-top: -2em;
 }
 
