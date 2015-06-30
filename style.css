@@ -11,12 +11,13 @@ html, body {
 
 .wrap {
 	background-color: #fff;
+	padding-bottom: 6em;
 }
 
 .content {
 	max-width: 800px;
 	margin: auto;
-	padding: 2em 2em 6em;
+	padding: 2em;
 }
 
 p {
@@ -146,6 +147,12 @@ a, a:visited {
 
 a:hover {
 	color: #dfd;
+}
+
+.social {
+	text-align: center;
+	max-width: 800px;
+	margin: auto;
 }
 
 .footer {
