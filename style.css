@@ -155,6 +155,10 @@ a:hover {
 	margin: auto;
 }
 
+.twitter {
+	padding-top: 4px;
+}
+
 .footer {
 	color: #494;
 	padding-top: 1em;
