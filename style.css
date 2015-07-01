@@ -11,7 +11,7 @@ html, body {
 
 .wrap {
 	background-color: #fff;
-	padding-bottom: 6em;
+	padding-bottom: 4em;
 }
 
 .content {
@@ -83,11 +83,6 @@ h3 {
 	padding: 0;
 }
 
-.selected {
-	color: #8c8;
-	background-color: #fff;
-}
-
 .random {
 	cursor: pointer;
 }
@@ -139,14 +134,60 @@ input[type="submit"]:hover {
 	background-color: #fff;
 }
 
+.section {
+	margin-top: 0.5em;
+}
+
+.item {
+	display: inline-block;
+	transition: all 0.2s;
+	font-size: 1.25em;
+	padding: 0.25em 0.5em;
+	margin: 0 0.25em 0.5em;
+	background-color: #8c8;
+	color: #fff;
+	border-radius: 0.25em;
+	border: 2px solid #8c8;
+}
+
+.item:hover {
+	color: #8c8;
+	background-color: #dfd;
+}
+
 a, a:visited {
 	transition: all 0.2s;
 	color: #fff;
+	text-shadow: 1px 1px 0px #5a5;
 	text-decoration: none;
 }
 
 a:hover {
 	color: #dfd;
+}
+
+#submit {
+	display: inline-block;
+	transition: all 0.2s;
+	margin-bottom: 1em;
+	padding: 0.5em 2em;
+	background-color: #8c8;
+	color: #fff;
+	text-shadow: 1px 1px 0px #5a5;
+	border-radius: 0.25em;
+	border: 2px solid #8c8;
+	border-radius: 2em;
+}
+
+#submit:hover {
+	color: #8c8;
+	background-color: #fff;
+}
+
+.selected {
+	cursor: default;
+	color: #8c8;
+	background-color: #fff;
 }
 
 .social {
@@ -157,6 +198,7 @@ a:hover {
 
 .twitter {
 	padding-top: 4px;
+	color: #acf; 
 }
 
 .footer {
@@ -164,4 +206,12 @@ a:hover {
 	padding-top: 1em;
 	width: 100%;
 	min-height: 64px;
+}
+
+@media screen and (max-width: 640px) {
+	.item {
+		display: block;
+		width: auto;
+	}
+
 }
