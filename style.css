@@ -196,10 +196,14 @@ a:hover {
 	margin: auto;
 }
 
-.twitter {
-	padding-top: 4px;
-	color: #acf; 
+.facebook {
+	color: #3B5998;
 }
+
+.twitter {
+	color: #4099FF; 
+}
+
 
 .footer {
 	color: #494;
