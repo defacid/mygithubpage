@@ -192,15 +192,16 @@ a:hover {
 
 .social {
 	text-align: center;
+	font-size: 1.5em;
 	max-width: 800px;
 	margin: auto;
 }
 
-.facebook {
+.facebook, .facebook:visited {
 	color: #3B5998;
 }
 
-.twitter {
+.twitter, .twitter:visited  {
 	color: #4099FF; 
 }
 
