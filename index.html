@@ -1,6 +1,18 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html><html lang="en">
 	<head>
-		<title>NOMDEPLUME</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name ="viewport" content ="initial-scale = 1.0, user-scalable = no">
+		<meta name="description" content="Generate millions of names for your novels, games, and anything else you create!" />
+		<meta name="keywords" content="name generation, character names, procedural name generation" />
+		
+		<title>nom de plume</title>
+		
+		<meta property="og:title" content="nom de plume"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="http://nomdeplu.me"/>
+		<meta property="og:site_name" content="nom de plume"/>
+		<meta property="fb:app_id" content="643858479014358"/>
+		<meta property="og:description" content="Generate millions of names for your novels, games, and anything else you create!"/>
 		
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@hellonomdeplume" />
@@ -12,8 +24,20 @@
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
 		<script src="./names.js" type="text/javascript"></script>
+		
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-48244736-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 	</head>
 	<body>
+	
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
@@ -31,15 +55,27 @@
 				<div class="button random">
 					<h2>Random Name</h2>
 					<div class="content">
-						<p>Procedrually generate a name</p>
+						<p>Instantly apparate a new friend, foe, or identity</p>
 						
 					</div>
 				</div>
 				<div class="button generate">
 					<h2>Generate a Name</h2>
 					<div class="content">
-						<h3>Coming Soon...</h3>
 						<p>Use filters to determine the type of name to display</p>
+					</div>
+					<div class="content">
+						<div class="section">
+							<h2>Gender</h2>
+							<div class="item gender" id="#female">Feminine</div><div class="item gender" id="#male">Masculine</div><div class="item gender selected" id="#all">All</div>
+						</div>
+						<div class="section">
+							<h2>Type</h2>
+							<div class="item length" id="#firstOnly">First Only</div><div class="item length" id="#firstAndMiddle">First and Middle</div><div class="item length selected" id="#fullName">Full Name</div>
+						</div>
+						<div class="section">
+							<div id="submit"><h2>Submit</h2></div>						</div>
+						<h3>More filter options coming soon...</h3>
 					</div>
 				</div>
 			</div>
@@ -48,14 +84,18 @@
 				<!-- FB -->
 				<div class="fb-share-button" data-href="http://nomdeplu.me" data-layout="button_count"></div>
 				<!-- Twitter -->
-				<div class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://nomdeplu.me" data-text="Generate millions of names for your novels, games, and more!" data-via="defacid" data-hashtags="nomdeplume">Tweet</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<div class="twitter"><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Generate millions of names for your novels, games, and more! http%3A%2F%2Fnomdeplu.me %23nomdeplume" target="_blank"><i class="fa fa-twitter"></i></a>
 				</div>
 				<!-- G+ -->
 			</div>
 			
 			<script>
 				$(".button").children(".content").hide();
+				
+				$(document).click(function() {
+					if (name != "") $(".twitter-share-button").attr("href", "https://twitter.com/intent/tweet?text=" + name + " was my name! Generate millions of names for your novels, games, and more! http%3A%2F%2Fnomdeplu.me %23nomdeplume");
+				});
+				
 				$(".button").hover(function() {
 					$(this).children(".content:first-of-type").stop().slideDown(200);
 				}, function() {
@@ -63,16 +103,45 @@
 				});
 
 				$(".random").click(function() {
-					length = 2 + Math.floor(Math.random() * 7);
 					$(".wrap > .content > p").text("");
-					$(".wrap > .content > h2").text(setName());
+					$(".wrap > .content > h2").text(setName("all", "fullName"));
+					$(".wrap > .content > h2").css("font-size", "3em");
+					
+					$(".generate").removeClass("selected");
+					$(".generate > div:first-of-type").addClass("content");
+					$(".generate > .content").stop().slideUp(200);
+				});
+				
+				$(".generate").click(function() {
+					$(this).addClass("selected");
+					$(".generate > div:first-of-type").removeClass("content");
+					$(this).children(".content:last-of-type").stop().slideDown(200);
+				
+				});
+				
+				$(".item").click(function() {
+					if ($(this).hasClass("gender")) {
+						gender = this.id.slice(1);
+					}
+					else if ($(this).hasClass("length")) {
+						length = this.id.slice(1);
+					}
+					$(this).addClass("selected");
+					$(this).siblings().removeClass("selected");
+				});
+				
+				$("#submit").click(function() {
+					$(".wrap > .content > p").text("");
+					$(".wrap > .content > h2").text(setName(gender, length));
 					$(".wrap > .content > h2").css("font-size", "3em");
 				});
 
 			</script>
 		</div>
 		<div class="footer">
-			<h3>2015 - Made with love by <a href="http://defacid.com">Shaquille Stoutamire</a></h3>
+			<h3>Made with love by <a href="http://defacid.com">Shaquille Stoutamire</a> 2015 
+			<br /><br />English names only at the moment
+			<br />May add support for other roots or languages in the future, with more support!</h3>
 		</div>
 	</body>
 </html>
