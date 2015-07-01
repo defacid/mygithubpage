@@ -151,6 +151,7 @@ input[type="submit"]:hover {
 }
 
 .item:hover {
+	cursor: pointer;
 	color: #8c8;
 	background-color: #dfd;
 }
@@ -180,6 +181,7 @@ a:hover {
 }
 
 #submit:hover {
+	cursor: pointer;
 	color: #8c8;
 	background-color: #fff;
 }
@@ -213,6 +215,10 @@ a:hover {
 	color: #4099FF;
 }
 
+.github, .github:visited  {
+	color: #555;
+}
+
 
 .footer {
 	color: #5a5;
@@ -226,5 +232,4 @@ a:hover {
 		display: block;
 		width: auto;
 	}
-
 }

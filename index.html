@@ -20,7 +20,7 @@
 		<meta name="twitter:description" content="Whether you're looking to find the perfect name for a specific type of character for your novel, trying to decide what to call your Chaotic Good Paladin, or just struggling to come up with an alias for online chatting, I can help!" />
 		
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./fonts/font-awesome-4.3.0/css/font-awesome.min.css">
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
 		<script src="./names.js" type="text/javascript"></script>
@@ -65,26 +65,27 @@
 							<div class="item length" id="#firstOnly">First Only</div><div class="item length" id="#firstAndMiddle">First and Middle</div><div class="item length selected" id="#fullName">Full Name</div>
 						</div>
 						<div class="section">
-							<div id="submit"><h2>Submit</h2></div>						</div>
-						<h3>More filter options coming soon...</h3>
+							<div id="submit"><h2>Submit</h2></div>						
+						</div>
 					</div>
 				</div>
 			</div>
 			
 			<div class="social">
 				<!-- FB -->
-				<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fnomdeplu.me%2F&" target="_blank"><i class="fa fa-facebook-square"></i></a>
+				<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fnomdeplu.me%2F&" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
 				<!-- Twitter -->
-				<a class="twitter" href="https://twitter.com/intent/tweet?text=Generate millions of names for your novels, games, and more! http%3A%2F%2Fnomdeplu.me %23nomdeplume" target="_blank"><i class="fa fa-twitter"></i></a>
-				
-				<!-- G+ -->
+				<a class="twitter" href="https://twitter.com/intent/tweet?text=Generate millions of names for your novels, games, and more! http%3A%2F%2Fnomdeplu.me %23nomdeplume" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+				<!-- GitHub -->
+				<a class="github" href="https://github.com/defacid/nom-de-plume" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+
 			</div>
 			
 			<script>
 				$(".button").children(".content").hide();
 				
 				$(document).click(function() {
-					if (name != "") $(".twitter-share-button").attr("href", "https://twitter.com/intent/tweet?text=" + name + " was my name! Generate millions of names for your novels, games, and more! http%3A%2F%2Fnomdeplu.me %23nomdeplume");
+					if (name != "") $(".twitter").attr("href", "https://twitter.com/intent/tweet?text=" + name + " was my name! Generate millions of names for your projects! http%3A%2F%2Fnomdeplu.me %23nomdeplume");
 				});
 				
 				$(".button").hover(function() {
@@ -131,8 +132,10 @@
 		</div>
 		<div class="footer">
 			<h3>Made with love by <a href="http://defacid.com">Shaquille Stoutamire</a> 2015 
-			<br /><br />English names only at the moment
-			<br />May add support for other roots or languages in the future, with more support!</h3>
+			<br /><br />
+			<br />You are entitled to use this tool, and the names you get out of it, free of charge in any personal or commercial projects.
+			<br />Feel free to tinker with the <a href="https://github.com/defacid/nom-de-plume">base code</a> and explore that as well.
+			<br /><br />English names only at the moment... sorry!</h3>
 		</div>
 	</body>
 </html>
