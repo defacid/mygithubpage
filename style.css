@@ -192,9 +192,17 @@ a:hover {
 
 .social {
 	text-align: center;
-	font-size: 1.5em;
 	max-width: 800px;
 	margin: auto;
+}
+
+.social a {
+	margin: 1em;
+	text-shadow: none;
+}
+
+.social a:hover {
+	color: #8c8;
 }
 
 .facebook, .facebook:visited {
@@ -202,12 +210,12 @@ a:hover {
 }
 
 .twitter, .twitter:visited  {
-	color: #4099FF; 
+	color: #4099FF;
 }
 
 
 .footer {
-	color: #494;
+	color: #5a5;
 	padding-top: 1em;
 	width: 100%;
 	min-height: 64px;
