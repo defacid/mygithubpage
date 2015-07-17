@@ -11,7 +11,7 @@ html, body {
 
 .wrap {
 	background-color: #fff;
-	padding-bottom: 4em;
+	padding-bottom: 4em; 
 }
 
 .content {
@@ -89,6 +89,10 @@ h3 {
 
 .generate {
 	cursor: pointer;
+}
+
+.displayName {
+	font-size: 3em;
 }
 
 form {
@@ -228,6 +232,23 @@ a:hover {
 }
 
 @media screen and (max-width: 640px) {
+	p {
+		font-size: 1em;
+	}
+	
+	h1 {
+		font-size: 3em;
+		margin: 0 auto 1em;
+	}
+	
+	h2 {
+		font-size: 1.25em;
+	}
+	
+	.displayName {
+		font-size: 2em;
+	}
+	
 	.item {
 		display: block;
 		width: auto;

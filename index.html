@@ -97,7 +97,7 @@
 				$(".random").click(function() {
 					$(".wrap > .content > p").text("");
 					$(".wrap > .content > h2").text(setName("all", "fullName"));
-					$(".wrap > .content > h2").css("font-size", "3em");
+					$(".wrap > .content > h2").addClass("displayName");
 					
 					$(".generate").removeClass("selected");
 					$(".generate > div:first-of-type").addClass("content");
@@ -125,7 +125,7 @@
 				$("#submit").click(function() {
 					$(".wrap > .content > p").text("");
 					$(".wrap > .content > h2").text(setName(gender, length));
-					$(".wrap > .content > h2").css("font-size", "3em");
+					$(".wrap > .content > h2").addClass("displayName");
 				});
 
 			</script>
